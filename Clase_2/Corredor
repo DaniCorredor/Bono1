@@ -4,3 +4,12 @@ touch Clase_2/constantes_electron.txt
 
 awk -F "," '$1 ~ /Electron/ {print $1}' Clase_2/constantes.csv > Clase_2/constantes_electron.txt
 
+git add Clase_2/Corredor
+
+git add Clase_2/constantes.csv
+
+git add Clase_2/constantes_electron.txt
+
+git commit -m "cambios final"
+
+git push
