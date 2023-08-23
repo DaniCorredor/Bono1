@@ -1,0 +1,6 @@
+wget -o "Clase_2/constantes.csv" https://raw.githubusercontent.com/joanh/Physical-Constants/master/Fundamental-Physical-Constants.csv  
+
+touch Clase_2/constantes_electron.txt
+
+awk -F "," '$1 ~ /Electron/ {print $1}' Clase_2/constantes.csv > Clase_2/constantes_electron.txt
+
